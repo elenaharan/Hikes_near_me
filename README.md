@@ -12,3 +12,4 @@ This is a JavaScript app built with HTML, CSS and JavaScript, which uses an exte
 -To learn coding practices focusing on the core principles of JavaScript: objects, arrays, conditional, and loops;
 
 ## Source
+https://github.com/elenaharan/Hikes_near_me/blob/main/Full-Stack%20Immersion%20A1%20Project%20Brief.pdf
