@@ -22,6 +22,31 @@ let pokemonRepository = (function () {
 }
 ];
 
+function add(pokemon) {
+  if (typeof pokemon === "object") {
+    repository.push(pokemon);
+  } else {
+    console.log("You've entered an incorrect pokemon");
+  }
+}
+
+function showDetails(pokemon) {
+  console.log();
+}
+
+function addListItem(pokemon) {
+  let pokemonList = document.querySelector('.pokemon-list');
+  let listItem = document.createElement('li');
+  let button = document.createElement('button');
+  button.innerText = pokemon.name;
+  button.classList.add('buttonStyle');
+  listItem.appendChild(button);
+  pokemonList.appendChild(listItem);
+  button.addEventListener("click", function showDetails(pokemon) {
+    console.log(button.innerText);
+  });
+}
+
 return {
   add: function(item) {
     pokemonList.push(item);
@@ -29,29 +54,14 @@ return {
 
   getAll: function() {
     return pokemonList;
-  }
+  },
+
+  addListItem: addListItem
 }
 }) ();
 
-/*pokemonRepository.getAll().forEach(function(pokemon) {
-    document.write('<p>' + pokemon.name + ', ' + 'height: ' 
-    + pokemon.height + ', ' + 'type: ' + pokemon.type + '</p>');
-  })*/
+pokemonRepository.add({name: 'Charizard', height: 1.7, type: ['fire', 'flying']});
 
-  pokemonRepository.getAll().forEach(function(pokemon) {
-    if (pokemon.height > 1.5) {
-      document.write('<p>' + pokemon.name + ', ' + 'height: ' 
-      + pokemon.height + ', ' + 'type: ' + pokemon.type + " - Wow! That's big!" + '</p>')
-    } else {
-      document.write('<p>' + pokemon.name + ', ' + 'height: ' 
-      + pokemon.height + ', ' + 'type: ' + pokemon.type + '</p>');
-    }
-  })
-
-  function add(pokemon) {
-    if (typeof pokemon === object) {
-      pokemonList.push(pokemon);
-    } else {
-      document.write("You've enetered incorrect type of data!");
-    }
-  }
+pokemonRepository.getAll().forEach(function(pokemon) {
+  pokemonRepository.addListItem(pokemon);
+})

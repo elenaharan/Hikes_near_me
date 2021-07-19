@@ -25,6 +25,11 @@ for (let i=0; i < pokemonList.length; i++) {
 }
 }
 
+/*pokemonRepository.getAll().forEach(function(pokemon) {
+    document.write('<p>' + pokemon.name + ', ' + 'height: ' 
+    + pokemon.height + ', ' + 'type: ' + pokemon.type + '</p>');
+  })*/
+
 
 pokemonRepository.getAll().forEach(function(pokemon) {
   if (pokemon.height > 1.5) {
