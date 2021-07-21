@@ -62,6 +62,6 @@ return {
 
 pokemonRepository.add({name: 'Charizard', height: 1.7, type: ['fire', 'flying']});
 pokemonRepository.add({name: 'Butterfree', height: 1.1, type: ['bug', 'flying']});
-pokemonRepository.getAll().forEach(function(pokemon) {
+pokemonRepository.getAll().forEach((pokemon) => {
   pokemonRepository.addListItem(pokemon);
 })
