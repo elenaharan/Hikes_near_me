@@ -79,7 +79,7 @@ let pokemonRepository = (function () {
     modalContainer.innerHTML = '';
 
     pokemonName.innerHTML = pokemon.name.toUpperCase();
-    pokemonHeight.innerHTML = 'Height ' + pokemon.height;
+    pokemonHeight.innerHTML = 'Height: ' + pokemon.height;
     pokemonType.innerHTML = 'Type: ' + pokemon.types;
     pokemonImage.src = pokemon.imageUrl;
     modalClose.innerHTML = 'X';
