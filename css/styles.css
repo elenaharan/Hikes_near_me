@@ -1,5 +1,5 @@
 body {
-  background-color: #90afc5;
+  background-color: #89da59;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-size: large;
   color: white;
@@ -7,25 +7,26 @@ body {
 }
 h1 {
   text-align: center;
-  color: #2a3132;
+  color: #ff420e;
   font-size: 72;
   text-transform: uppercase;
 }
 .buttonStyle {
-  background-color: #336b87;
-  border: none;
-  color: white;
+  background-color: #80bd9e;
+  color: #ff420e;
   text-align: center;
   font-size: 36px;
   padding: 5px;
-  min-width: 50%;
+  min-width: 35%;
   min-height: 50px;
-  margin: 4px 2px;
+  margin: 8px 2px;
   cursor: pointer;
-  border: 2px solid #2a3132;
+  border: 2px solid #f98866;
+  border-radius: 5px;
 }
 .buttonStyle:hover {
   opacity: 0.8;
+  border: 2px solid #ff420e;
 }
 .pokemon-list {
   list-style-type: none;
@@ -61,29 +62,46 @@ h1 {
   margin: auto;
   display: inline-block;
   box-sizing: border-box;
-  background: #fff;
+  background: #80bd9e;
   padding: 15px;
   width: 100%;
   max-width: 700px;
   text-align: left;
+  border: 2px solid #f98866;
 }
 
 .modal-close {
   float: right;
+  margin-top: -250px;
+  text-align: right;
   -webkit-appearance: none;
   border: 0;
   background: none;
-  color: #777;
-  text-decoration: underline;
+  color: #ff420e;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: larger;
 }
 
 .modal h1 {
   margin-top: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .modal p {
   margin-bottom: 0;
-  color: black;
-  text-align: left;
+  color: #ff420e;
+  text-align: center;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  min-width: 100%;
+  padding: 0px;
+}
+
+.pokemonImage {
+  padding: 0px;
+  min-width: 20%;
 }
