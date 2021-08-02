@@ -10,6 +10,10 @@ about each Pokemon after clicking on a particular Pokemon character.
 
 This is a JavaScript app built with HTML, CSS and JavaScript, which uses an external API.
 
+## Dependencies
+
+This application has a dependency on Bootstrap, which in turn is dependent on jQuery and Poppoer.js.
+
 ## Key Features
 
 The app loads data from an external source (API) and displays a list of items. On user action (e.g., by clicking on a list item), the app displays details for each pokemon in a modal.
