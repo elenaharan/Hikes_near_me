@@ -12,7 +12,7 @@ This is a JavaScript app built with HTML, CSS and JavaScript, which uses an exte
 
 ## Dependencies
 
-This application has a dependency on Bootstrap, which in turn is dependent on jQuery and Poppoer.js.
+This application has a dependency on Bootstrap, which is dependent on jQuery and Popper.js.
 
 ## Key Features
 
